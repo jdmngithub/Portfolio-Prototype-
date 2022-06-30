@@ -1,0 +1,187 @@
+/*  Jose Daniel Mendoza
+    Web 210.0001
+ */
+ /* Color Palette 
+ https://coolors.co/fffcf2-ccc5b9-403d39-252422-eb5e28
+ #fffcf2 Floral White
+ #ccc5b9 Pale Silver
+ #403d39 Black Olive
+ #252422 Eerie Black
+ #eb5e28 Flame
+ */
+
+
+/* Global styles
+ ---------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    padding: .5em 0;
+}
+body {
+    background-color: #ccc5b9;
+    text-align: center;
+}
+h2, h3 {
+    padding: .5em 0;
+    color: #eb5e28;
+    background-color: #403D39;
+}
+/* Header styles
+ ---------------------------------------- */
+header {
+    background-color: #eb5e28 ;
+}
+h1 {
+    color: #252422;
+    padding: 1em;
+}
+nav ul{
+    background-color: #403D39 ;
+    list-style-type: none;
+    width: 100%;
+}
+nav ul li {
+    color: #fffcf2;
+    border: #fffcf2 solid 1.5px;
+    display: block;
+    width: 100vw;
+    padding: .5em 0;
+}
+.profile-brief img {
+    padding: .5em;
+}
+.profile-brief h3 {
+    color: #252422;
+    padding: .5em;
+    background-color: #ccc5b9;
+}
+/* Projects styles
+ ---------------------------------------- */
+
+/* Project Image styles
+ ---------------------------------------- */
+/* .project-img { 
+    text-align: center;
+}*/
+.project-img img {
+    width: 80%;
+    height: auto;
+    padding-bottom: .5em;
+}
+
+/* Footer styles
+ ---------------------------------------- */
+ footer {
+    display: block;
+    background-color: #252422;
+    color: #fffcf2 ;
+ }
+.contact-list li {
+    padding: .5em 0;
+}
+footer p {
+    padding: .5em 0;
+}
+.about-me a {
+padding: .5em;
+margin: .5em;
+}
+/* Responsive styles
+ ---------------------------------------- */
+@media screen and (min-width:750px){
+    /* Navigation */
+    nav ul {
+        background-color: #403D39 ;
+        list-style-type: none;
+        overflow: hidden;
+        padding: 1.25em 0; 
+        align-content: center ;
+    }
+    nav ul li {
+        border: none;
+        color: #fffcf2;
+        float: left;
+        width: 25%;
+        padding: 10px 0 10px 0;
+        
+    }
+    nav a {
+        padding: 20px 40px;
+    }
+    /* Profile Grid */
+    .profile-brief {
+        display: grid;
+        text-align: center;
+        width: 100%;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 5.5em 8em 6em;
+    }
+    .profile-brief div {
+        padding: 1em;
+    }
+    .item1 {
+        grid-row: 1/4;
+        padding: 0;
+    }
+    .item1 img {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .item3 {
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+    .item4 p {
+        padding-top: 40px;
+    }
+    /* Projects grid */
+    .layout {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: .5em;
+    }
+    .projects div {
+        padding: 3em;
+    }
+    .projects div:first-child {
+        padding: .5em 0 0 0;
+    }
+    .project-img img {
+        width: 16em;
+        height: 16em;
+    }
+}
+
+@media screen and (min-width:1150px){
+    .profile-brief {
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+    .item2 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    .item1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .item3 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr repeat(4, 5fr);
+    }
+    .project1 {
+        grid-column: 1/3;
+    }
+}
